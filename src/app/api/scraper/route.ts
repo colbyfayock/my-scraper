@@ -1,6 +1,8 @@
 import chromium from '@sparticuz/chromium-min';
 import puppeteer from 'puppeteer-core';
 
+export const maxDuration = 20;
+
 export async function POST(request: Request) {
   const { siteUrl } = await request.json();
 
